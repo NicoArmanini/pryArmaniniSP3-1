@@ -21,5 +21,25 @@ namespace pryArmaniniSP3_1
         {
             this.Close();  
         }
+
+        private void txtNumeroTurno_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void txtNumeroTurno_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) &&
+                  (e.KeyChar != '.'))
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void btnSalir_Click_1(object sender, EventArgs e)
+        {
+            
+            this.Close();  
+        }
     }
 }
