@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.mrcRegistro = new System.Windows.Forms.GroupBox();
+            this.nudAnioFabricacion = new System.Windows.Forms.NumericUpDown();
             this.txtTitular = new System.Windows.Forms.TextBox();
             this.txtDominio = new System.Windows.Forms.TextBox();
             this.txtNumeroTurno = new System.Windows.Forms.TextBox();
@@ -46,10 +47,9 @@
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnConsultar = new System.Windows.Forms.Button();
-            this.nudAnioFabricacion = new System.Windows.Forms.NumericUpDown();
             this.mrcRegistro.SuspendLayout();
-            this.mrcEstadisticas.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.nudAnioFabricacion)).BeginInit();
+            this.mrcEstadisticas.SuspendLayout();
             this.SuspendLayout();
             // 
             // mrcRegistro
@@ -63,18 +63,40 @@
             this.mrcRegistro.Controls.Add(this.lblDominio);
             this.mrcRegistro.Controls.Add(this.lblNumeroTurno);
             this.mrcRegistro.Location = new System.Drawing.Point(30, 17);
-            this.mrcRegistro.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mrcRegistro.Margin = new System.Windows.Forms.Padding(2);
             this.mrcRegistro.Name = "mrcRegistro";
-            this.mrcRegistro.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mrcRegistro.Padding = new System.Windows.Forms.Padding(2);
             this.mrcRegistro.Size = new System.Drawing.Size(482, 167);
             this.mrcRegistro.TabIndex = 0;
             this.mrcRegistro.TabStop = false;
             this.mrcRegistro.Text = "Registro de Turnos";
             // 
+            // nudAnioFabricacion
+            // 
+            this.nudAnioFabricacion.Location = new System.Drawing.Point(175, 90);
+            this.nudAnioFabricacion.Maximum = new decimal(new int[] {
+            2021,
+            0,
+            0,
+            0});
+            this.nudAnioFabricacion.Minimum = new decimal(new int[] {
+            1950,
+            0,
+            0,
+            0});
+            this.nudAnioFabricacion.Name = "nudAnioFabricacion";
+            this.nudAnioFabricacion.Size = new System.Drawing.Size(94, 20);
+            this.nudAnioFabricacion.TabIndex = 8;
+            this.nudAnioFabricacion.Value = new decimal(new int[] {
+            1950,
+            0,
+            0,
+            0});
+            // 
             // txtTitular
             // 
             this.txtTitular.Location = new System.Drawing.Point(170, 121);
-            this.txtTitular.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtTitular.Margin = new System.Windows.Forms.Padding(2);
             this.txtTitular.MaxLength = 30;
             this.txtTitular.Name = "txtTitular";
             this.txtTitular.Size = new System.Drawing.Size(290, 20);
@@ -83,7 +105,7 @@
             // txtDominio
             // 
             this.txtDominio.Location = new System.Drawing.Point(170, 57);
-            this.txtDominio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDominio.Margin = new System.Windows.Forms.Padding(2);
             this.txtDominio.MaxLength = 7;
             this.txtDominio.Name = "txtDominio";
             this.txtDominio.Size = new System.Drawing.Size(138, 20);
@@ -92,7 +114,7 @@
             // txtNumeroTurno
             // 
             this.txtNumeroTurno.Location = new System.Drawing.Point(170, 28);
-            this.txtNumeroTurno.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtNumeroTurno.Margin = new System.Windows.Forms.Padding(2);
             this.txtNumeroTurno.MaxLength = 5;
             this.txtNumeroTurno.Name = "txtNumeroTurno";
             this.txtNumeroTurno.Size = new System.Drawing.Size(79, 20);
@@ -149,9 +171,9 @@
             this.mrcEstadisticas.Controls.Add(this.lblMasAntiguo);
             this.mrcEstadisticas.Controls.Add(this.lblCantTurnos);
             this.mrcEstadisticas.Location = new System.Drawing.Point(30, 206);
-            this.mrcEstadisticas.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mrcEstadisticas.Margin = new System.Windows.Forms.Padding(2);
             this.mrcEstadisticas.Name = "mrcEstadisticas";
-            this.mrcEstadisticas.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.mrcEstadisticas.Padding = new System.Windows.Forms.Padding(2);
             this.mrcEstadisticas.Size = new System.Drawing.Size(482, 167);
             this.mrcEstadisticas.TabIndex = 0;
             this.mrcEstadisticas.TabStop = false;
@@ -160,7 +182,7 @@
             // txt6Caracteres
             // 
             this.txt6Caracteres.Location = new System.Drawing.Point(230, 117);
-            this.txt6Caracteres.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txt6Caracteres.Margin = new System.Windows.Forms.Padding(2);
             this.txt6Caracteres.Name = "txt6Caracteres";
             this.txt6Caracteres.ReadOnly = true;
             this.txt6Caracteres.Size = new System.Drawing.Size(81, 20);
@@ -169,7 +191,7 @@
             // txtMasAntiguo
             // 
             this.txtMasAntiguo.Location = new System.Drawing.Point(230, 78);
-            this.txtMasAntiguo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtMasAntiguo.Margin = new System.Windows.Forms.Padding(2);
             this.txtMasAntiguo.Name = "txtMasAntiguo";
             this.txtMasAntiguo.ReadOnly = true;
             this.txtMasAntiguo.Size = new System.Drawing.Size(81, 20);
@@ -178,7 +200,7 @@
             // txtCantTurnos
             // 
             this.txtCantTurnos.Location = new System.Drawing.Point(230, 37);
-            this.txtCantTurnos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCantTurnos.Margin = new System.Windows.Forms.Padding(2);
             this.txtCantTurnos.Name = "txtCantTurnos";
             this.txtCantTurnos.ReadOnly = true;
             this.txtCantTurnos.Size = new System.Drawing.Size(81, 20);
@@ -217,17 +239,18 @@
             // btnRegistrar
             // 
             this.btnRegistrar.Location = new System.Drawing.Point(550, 17);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(124, 40);
             this.btnRegistrar.TabIndex = 1;
             this.btnRegistrar.Text = "Registrar";
             this.btnRegistrar.UseVisualStyleBackColor = true;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
             // 
             // btnSalir
             // 
             this.btnSalir.Location = new System.Drawing.Point(550, 79);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(124, 38);
             this.btnSalir.TabIndex = 2;
@@ -238,34 +261,12 @@
             // btnConsultar
             // 
             this.btnConsultar.Location = new System.Drawing.Point(550, 206);
-            this.btnConsultar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnConsultar.Margin = new System.Windows.Forms.Padding(2);
             this.btnConsultar.Name = "btnConsultar";
             this.btnConsultar.Size = new System.Drawing.Size(124, 35);
             this.btnConsultar.TabIndex = 3;
             this.btnConsultar.Text = "Consultar";
             this.btnConsultar.UseVisualStyleBackColor = true;
-            // 
-            // nudAnioFabricacion
-            // 
-            this.nudAnioFabricacion.Location = new System.Drawing.Point(175, 90);
-            this.nudAnioFabricacion.Maximum = new decimal(new int[] {
-            2021,
-            0,
-            0,
-            0});
-            this.nudAnioFabricacion.Minimum = new decimal(new int[] {
-            1950,
-            0,
-            0,
-            0});
-            this.nudAnioFabricacion.Name = "nudAnioFabricacion";
-            this.nudAnioFabricacion.Size = new System.Drawing.Size(94, 20);
-            this.nudAnioFabricacion.TabIndex = 8;
-            this.nudAnioFabricacion.Value = new decimal(new int[] {
-            1950,
-            0,
-            0,
-            0});
             // 
             // frmMain
             // 
@@ -277,14 +278,15 @@
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.mrcEstadisticas);
             this.Controls.Add(this.mrcRegistro);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmMain";
             this.Text = "Auto test";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.mrcRegistro.ResumeLayout(false);
             this.mrcRegistro.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.nudAnioFabricacion)).EndInit();
             this.mrcEstadisticas.ResumeLayout(false);
             this.mrcEstadisticas.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.nudAnioFabricacion)).EndInit();
             this.ResumeLayout(false);
 
         }
