@@ -83,5 +83,14 @@ namespace pryArmaniniSP3_1
         {
 
         }
+
+        private void txtTitular_TextChanged(object sender, EventArgs e)
+        {
+            if (txtTitular.Text != "" && txt6Caracteres.Text != "" 
+                && txtDominio.Text != "")
+            {
+                btnRegistrar.Enabled = true;
+            }
+        }
     }
 }

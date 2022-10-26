@@ -101,6 +101,7 @@
             this.txtTitular.Name = "txtTitular";
             this.txtTitular.Size = new System.Drawing.Size(290, 20);
             this.txtTitular.TabIndex = 7;
+            this.txtTitular.TextChanged += new System.EventHandler(this.txtTitular_TextChanged);
             // 
             // txtDominio
             // 
@@ -238,6 +239,7 @@
             // 
             // btnRegistrar
             // 
+            this.btnRegistrar.Enabled = false;
             this.btnRegistrar.Location = new System.Drawing.Point(550, 17);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegistrar.Name = "btnRegistrar";
@@ -272,7 +274,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(728, 392);
+            this.ClientSize = new System.Drawing.Size(681, 386);
             this.Controls.Add(this.btnConsultar);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnRegistrar);
